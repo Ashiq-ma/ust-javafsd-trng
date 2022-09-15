@@ -1,14 +1,19 @@
-package abstractclass;
+package interfaceclass;
 
-public class Language {
-	public void display() {
-		System.out.println("This is Java programming");
-	}
+interface Language {
+	void getName(String name);
 
 }
-class Main extends Language {
+class ProgrammingLanguage implements Language{
+	public void getName(String name) {
+System.out.println("Programming Language"+name);
+
+}
+}
+class Main{
 	public static void main(String args[]) {
-		Main obj=new Main();
-		obj.display();
+		ProgrammingLanguage language = new ProgrammingLanguage();
+		language.getName("Java");
 	}
 }
+
