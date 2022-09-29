@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+var x="red";
+function switches(){
+	switch(x){
+	case "red":
+		document.write("Success");
+		break;
+		
+	case "blue":
+		alert("failure");
+		break;
+	default:
+		alert("invalid");
+	}
+}
+</script>
+</head>
+<body>
+<input type="button" value="submit" onclick="switches()">
+</body>
+</html>
