@@ -1,4 +1,4 @@
-package com.ust;
+
 
 import java.util.Scanner;
 
